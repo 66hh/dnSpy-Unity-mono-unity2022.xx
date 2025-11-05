@@ -61,7 +61,8 @@ namespace UnityMonoDllSourceCodePatcher.V40 {
 		protected override void PatchOriginalFilesCore() {
 			Console.WriteLine("Patching solution and projects");
 			if (solutionOptions.UnityVersion.Major == 2021 || solutionOptions.UnityVersion.Major == 2020) {
-				var cleanSolFile = $"clean-dnSpy-Unity-mono-v{solutionOptions.UnityVersion.Major}.x-V40.sln";				File.Copy(cleanSolFile, solutionOptions.SolutionFilename, overwrite: true);
+				var cleanSolFile = $"clean-dnSpy-Unity-mono-v{solutionOptions.UnityVersion.Major}.x-V40.sln";
+				File.Copy(cleanSolFile, solutionOptions.SolutionFilename, overwrite: true);
 			}
 
 
@@ -96,6 +97,9 @@ namespace UnityMonoDllSourceCodePatcher.V40 {
 
 
 			switch (solutionOptions.UnityVersion.Major) {
+				case 2022:
+				sp.Patch2022();
+				break;
 				case 2021:
 				sp.Patch2021();
 				break;
