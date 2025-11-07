@@ -1,5 +1,11 @@
-# umpatcher update for Unity versions 2021.xx 
+# umpatcher update for Unity versions 2022.xx 
 *by Neoshrimp*
+
+此仓库添加了2022的支持
+
+原仓库:
+
+https://github.com/Neoshrimp/dnSpy-Unity-mono-unity2021.xx
 
 Mono project structure seems to have changed quite a bit going from 2020.xx to 2021.xx. So much so that the current umpacher is unable to handle it. This fork attempts to fix that.
 
@@ -403,3 +409,4 @@ version | git hash
 2021.3.14f1-mbe | acb7cd69d120a28d0e0e2e3f4509de412fff2fb1
 2021.3.18f1-mbe | 81a7696b7c1960113bebfe610ac3e693c7d41fce
 2021.3.27f1-mbe | d975133f02b48373758706ef6b5634738a293c2e
+
